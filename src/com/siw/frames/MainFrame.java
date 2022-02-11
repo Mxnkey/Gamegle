@@ -1,17 +1,11 @@
-package com.siw;
+package com.siw.frames;
 
-import com.siw.frames.*;
 import com.siw.model.VideoGame;
 import com.siw.query.SparqlQuery;
-import org.apache.jena.base.Sys;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 
 public class MainFrame extends JFrame{
     private JButton tousLesJeuxVidéosButton;

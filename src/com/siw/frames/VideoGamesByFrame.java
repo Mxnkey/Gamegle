@@ -1,5 +1,6 @@
 package com.siw.frames;
 
+import com.siw.model.VideoGame;
 import com.siw.query.SparqlQuery;
 
 import javax.swing.*;
@@ -41,7 +42,9 @@ public class VideoGamesByFrame extends JFrame{
                 JList list = (JList)e.getSource();
                 if (e.getClickCount() == 2) {
                     int index = list.locationToIndex(e.getPoint());
-                    System.out.println(list.getSelectedValue());
+                    String selectedVideoGameName = list.getSelectedValue().toString();
+                    VideoGame selectedVideoGame = SparqlQuery.getVideoGameDetails(selectedVideoGameName);
+                    new VideoGameDetailsFrame(selectedVideoGameName, selectedVideoGame);
                 }
             }
         });

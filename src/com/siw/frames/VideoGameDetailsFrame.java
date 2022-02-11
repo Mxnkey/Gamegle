@@ -1,10 +1,8 @@
 package com.siw.frames;
 
-import com.siw.MainFrame;
 import com.siw.model.VideoGame;
 
 import javax.swing.*;
-import java.awt.*;
 
 public class VideoGameDetailsFrame {
     private JLabel videoGameName;
